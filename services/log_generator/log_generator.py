@@ -57,7 +57,7 @@ def write_log(log_entry):
         logging.error(f"Write failed: {e}")
 
 def main():
-    logging.info("Log Generator Started")
+    logging.info("Log Generator Started..")
     start_time = time.time()
     while RUNNING:
         if time.time() - start_time > 60:
@@ -67,7 +67,7 @@ def main():
         write_log(log_entry)
         print(log_entry)
         time.sleep(random.uniform(0.5, 1))
-    logging.info("Log Generator Stopped")
+    logging.info("Log Generator Stopped..")
 
 if __name__ == "__main__":
     main()
