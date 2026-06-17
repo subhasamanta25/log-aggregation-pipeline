@@ -46,7 +46,6 @@ def generate_log():
     level = random.choice(LEVELS)
     service = random.choice(SERVICES)
     message = random.choice(MESSAGES)
-
     return f"[{timestamp}] {level} [{service}] {message}"
 
 def write_log(log_entry):
