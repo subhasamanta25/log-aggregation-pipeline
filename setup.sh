@@ -1,14 +1,14 @@
 #!/bin/bash
 
-echo "========================"
+echo "=========================="
 echo "Log Aggregation Pipeline Setup"
-echo "========================"
+echo "=========================="
 
 mkdir -p logs processed reports
 chmod 777 logs processed reports
 
 echo " "
-echo "Checking Docker...."
+echo "Checking Docker..."
 
 docker --version || {
 	echo "Docker not Installed!!"
@@ -16,7 +16,7 @@ docker --version || {
 }
 
 echo " "
-echo "Checking Docker Compose...."
+echo "Checking Docker Compose..."
 
 docker-compose --version || {
 	echo "Docker Compose not Installed!!"
@@ -24,4 +24,4 @@ docker-compose --version || {
 }
 
 echo " "
-echo "Setup Complete...."
+echo "Setup Complete..."
