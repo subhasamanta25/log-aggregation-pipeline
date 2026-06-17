@@ -139,7 +139,7 @@ def monitor_logs():
 
         except Exception as e:
             logging.error(e)
-
+            
         if time.time() - last_stats_time >= 10:
 
             logging.info(
@@ -147,12 +147,11 @@ def monitor_logs():
                 f"Filtered={stats['filtered']} "
                 f"Duplicates={stats['duplicates']}"
             )
-
             last_stats_time = time.time()
         time.sleep(1)
 
 if __name__ == "__main__":
 
-    logging.info("Log Processor Started")
+    logging.info("Log Processor Started..")
     monitor_logs()
-    logging.info("Log Processor Stopped")
+    logging.info("Log Processor Stopped..")
