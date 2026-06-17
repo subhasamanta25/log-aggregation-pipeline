@@ -1,6 +1,7 @@
 version: "3.8"
 services:
 
+
   log_generator:
     build:
       context: ./services/log_generator
@@ -12,6 +13,7 @@ services:
     restart: "no"
     mem_limit: 128m
     cpus: "0.50"
+
 
   log_processor:
     build:
@@ -26,6 +28,7 @@ services:
     mem_limit: 128m
     cpus: "0.50"
 
+
   log_analyzer:
     build:
       context: ./services/log_analyzer
@@ -38,6 +41,7 @@ services:
     restart: "no"
     mem_limit: 128m
     cpus: "0.50"
+
 
 volumes:
   logs:
