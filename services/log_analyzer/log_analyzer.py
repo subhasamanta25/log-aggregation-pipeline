@@ -111,7 +111,7 @@ def print_summary(report):
     ].items():
 
         print(f"{service}: {count}")
-
+        
     print("\nTop Errors:")
 
     for error in report["top_errors"]:
@@ -122,7 +122,7 @@ def print_summary(report):
 
 def main():
 
-    logging.info("Log Analyzer Started")
+    logging.info("Log Analyzer Started..")
     report = analyze_logs()
 
     if report:
@@ -132,7 +132,7 @@ def main():
             f"Report saved to "
             f"{REPORT_FILE}"
         )
-    logging.info("Log Analyzer Finished")
+    logging.info("Log Analyzer Finished..")
 
 if __name__ == "__main__":
     main()
