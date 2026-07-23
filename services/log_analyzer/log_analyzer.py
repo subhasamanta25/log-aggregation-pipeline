@@ -2,7 +2,7 @@ import os
 import re
 import json
 import logging
-from collections import Counter
+#from collections import Counter
 from datetime import datetime
 
 CLEAN_LOG = "/processed/clean.log"
